@@ -9,7 +9,7 @@ import dagger.Provides;
  * 模块
  */
 @Module
-public class MainModule {
+class MainModule {
     @Provides
     Sucker providerSucker() {
         return new Sucker();

@@ -1,13 +1,13 @@
 package com.iostyle.wtfdagger.dagger;
 
-import android.support.v7.app.AppCompatActivity;
+import com.iostyle.wtfdagger.MainActivity;
 
 import dagger.Component;
 
 /**
- * 组件
+ * 组件 桥梁
  */
-@Component
+@Component(modules = {MainModule.class})
 public interface MainComponent {
-    void inject(AppCompatActivity activity);
+    void inject(MainActivity activity);
 }

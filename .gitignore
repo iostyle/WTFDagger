@@ -11,3 +11,6 @@
 /build
 /captures
 .externalNativeBuild
+/gradlew.bat
+/.gitignore
+/.idea/misc.xml
