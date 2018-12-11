@@ -1,4 +1,4 @@
-package com.iostyle.wtfdagger.bean;
+package com.iostyle.wtfdagger.part1.bean;
 
 
 import android.util.Log;

@@ -1,6 +1,6 @@
-package com.iostyle.wtfdagger.dagger;
+package com.iostyle.wtfdagger.part1.dagger;
 
-import com.iostyle.wtfdagger.MainActivity;
+import com.iostyle.wtfdagger.part1.Part1Act;
 
 import dagger.Component;
 
@@ -9,5 +9,5 @@ import dagger.Component;
  */
 @Component(modules = {MainModule.class})
 public interface MainComponent {
-    void inject(MainActivity activity);
+    void inject(Part1Act activity);
 }

@@ -1,6 +1,6 @@
-package com.iostyle.wtfdagger.dagger;
+package com.iostyle.wtfdagger.part1.dagger;
 
-import com.iostyle.wtfdagger.bean.Sucker;
+import com.iostyle.wtfdagger.part1.bean.Sucker;
 
 import dagger.Module;
 import dagger.Provides;

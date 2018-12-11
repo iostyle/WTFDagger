@@ -9,6 +9,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
     }
     buildTypes {
         release {
@@ -28,6 +34,8 @@ dependencies {
 
     debugImplementation "com.simple:spiderman:1.0.8"
     releaseImplementation "com.simple:spiderman-no-op:1.0.8"
+
+    implementation "com.jakewharton:butterknife:7.0.1"
 
     implementation 'com.google.dagger:dagger:2.19'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.19'
