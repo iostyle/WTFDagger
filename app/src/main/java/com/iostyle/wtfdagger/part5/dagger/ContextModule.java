@@ -36,5 +36,22 @@ public class ContextModule {
         return mAppContext;
     }
 
+    /**
+     * 另一种方式来实现 通过自定义注解来匹配
+     * 其实 @Named 实现原理也是如此
+     * @see Named
+     */
+
+//    @ContextLife("Activity")
+//    @Provides
+//    Context providerContext() {
+//        return mContext;
+//    }
+//
+//    @ContextLife("Application")
+//    @Provides
+//    Context providerAppContext() {
+//        return mAppContext;
+//    }
 
 }

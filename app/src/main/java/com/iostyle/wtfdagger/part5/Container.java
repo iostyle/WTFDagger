@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.iostyle.wtfdagger.R;
+import com.iostyle.wtfdagger.part5.dagger.ContextLife;
 import com.iostyle.wtfdagger.part5.dagger.ContextModule;
 import com.iostyle.wtfdagger.part5.dagger.DaggerComponent;
 
@@ -26,6 +27,14 @@ public class Container extends Fragment {
     @Named("Application")
     @Inject
     Context mAppContext;
+
+//    @ContextLife("Activity")
+//    @Inject
+//    Context mContext;
+//
+//    @ContextLife("Application")
+//    @Inject
+//    Context mAppContext;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
