@@ -9,13 +9,13 @@ import com.iostyle.wtfdagger.part6.dagger.DaggerApplicationComponent;
 
 public class App extends Application {
     private static Context mContext;
-    public static ApplicationComponent applicationComponent;
+    public static ApplicationComponent part6Component;
 
     @Override
     public void onCreate() {
         super.onCreate();
         mContext = this;
-        applicationComponent = DaggerApplicationComponent.builder()
+        part6Component = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this)).build();
     }
 

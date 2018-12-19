@@ -7,7 +7,6 @@ import android.util.Log;
 
 import com.iostyle.wtfdagger.App;
 import com.iostyle.wtfdagger.R;
-import com.iostyle.wtfdagger.part5.dagger.ContextLife;
 import com.iostyle.wtfdagger.part6.dagger.ActivityModule;
 import com.iostyle.wtfdagger.part6.dagger.DaggerActivityComponent;
 
@@ -28,7 +27,7 @@ public class Part6Act extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common);
         DaggerActivityComponent.builder()
-                .applicationComponent(App.applicationComponent)
+                .applicationComponent(App.part6Component)
                 .activityModule(new ActivityModule(this))
                 .build().inject(this);
         Log.e("Dagger", context.toString());
