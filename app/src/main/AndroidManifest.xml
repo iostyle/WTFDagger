@@ -28,6 +28,7 @@
         <activity android:name=".part8.Part8Act" />
         <activity android:name=".part9.Part9Act" />
         <activity android:name=".part10.Part10Act" />
+        <activity android:name=".mvp.ShopListActivity" />
     </application>
 
 </manifest>

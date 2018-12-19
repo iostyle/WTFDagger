@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.iostyle.wtfdagger.mvp.ShopListActivity;
 import com.iostyle.wtfdagger.part1.Part1Act;
 import com.iostyle.wtfdagger.part2.Part2Act;
 import com.iostyle.wtfdagger.part3.Part3Act;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5,
-            R.id.btn6,R.id.btn7,R.id.btn8,R.id.btn9,R.id.btn10})
+            R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btn10, R.id.mvp})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn1:
@@ -65,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn10:
                 startActivity(new Intent(this, Part10Act.class));
+                break;
+            case R.id.mvp:
+                startActivity(new Intent(this, ShopListActivity.class));
                 break;
         }
     }
