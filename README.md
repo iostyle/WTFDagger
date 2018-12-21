@@ -12,11 +12,11 @@
 
  @Qualifier: 当类的类型不足以鉴别一个依赖的时候，我们就可以使用这个注解标示。例如：在Android中，我们会需要不同类型的context，所以我们就可以定义 qualifier注解“@perApp”和“@perActivity”，这样当注入一个context的时候，我们就可以告诉 Dagger我们想要哪种类型的context。  
 
-
+--- 
 为了便于理解，其实可以把component想象成针管，module是注射瓶，里面的依赖对象是注入的药水，build方法是插进患者（Container），inject方法的调用是推动活塞.
 
 
-## TIP 
+## Tip 
 项目中，每一部分都可当作一个课时来学习，基本都有注释。循序渐进，由浅入深。最后是Dagger2 + MVP  
 
 当你全部学习完之后，你就会感觉到  一阵空虚...
